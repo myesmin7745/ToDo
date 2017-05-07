@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   get 'list/index'
-  get 'list/homework => ' 'list#first'
-  get 'list/chords => ' 'list#second'
+  get 'list/homework' =>  'list#first'
+  get 'list/chords' =>  'list#second'
 
-  root "application#hello"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
