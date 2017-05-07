@@ -40,7 +40,7 @@ class ListController < ApplicationController
     l = List.new
     l.name = parmas['name']
     l.save
-    redirect_to "/list#{ l.id }"
+    redirect_to '/list#{ l.id }'
   end
   
   end #end of show method
