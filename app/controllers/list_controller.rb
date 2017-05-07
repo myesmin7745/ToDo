@@ -6,6 +6,7 @@ class ListController < ApplicationController
 
   def show
     @id = params['id']
+    @list = List.find_by_id(params[‘id’])
      if params['id'] == "1"
        
     #todo list one
@@ -32,7 +33,16 @@ class ListController < ApplicationController
     
     @third_todo_description = "Wash dishes"
     @third_todo_pomodoro_estimate = "2 pomodoros"
-  end #end of if statement
-end #end of show method
+     end #end of if statement
+  def new
+  end
+  def create
+    l = List.new
+    l.name = parmas['name']
+    l.save
+    redirect_to "/list#{ l.id }"
+  end
+  
+  end #end of show method
 end #end of class(nothing goes passed this)
 
