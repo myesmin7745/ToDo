@@ -5,6 +5,6 @@ class ListController < ApplicationController
   end
   def first
   end
-  def sceond
+  def second
   end
 end
