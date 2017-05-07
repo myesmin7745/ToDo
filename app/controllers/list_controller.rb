@@ -32,12 +32,7 @@ class ListController < ApplicationController
     
     @third_todo_description = "Wash dishes"
     @third_todo_pomodoro_estimate = "2 pomodoros"
-  end
-  
-  def first
-  end
-  
-  def second
-  end
-end
+  end #end of if statement
+end #end of show method
+end #end of class(nothing goes passed this)
 
